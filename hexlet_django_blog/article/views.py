@@ -4,4 +4,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("article")
+    return render(
+        request,
+        "articles/index.html",
+        context={
+            "name": "Articles",
+        },
+    )
