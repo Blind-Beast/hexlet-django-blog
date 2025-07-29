@@ -5,5 +5,5 @@ from django.views import View
 
 
 class IndexView(View):
-    def get(self, request, *args, **kwargs):
-        return HttpResponse("Articles")
+    def get(self, request, article_id, tags):
+        return HttpResponse(f"Статья номер {article_id}. Тег {tags}")
