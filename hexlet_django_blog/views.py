@@ -11,10 +11,6 @@ class HomePageView(TemplateView):
         context["who"] = "World"
         return context
 
-    #def get(self, request, **kwargs):
-        #path = reverse('article', kwargs={'tags': 'python', 'article_id': 42})
-        #return redirect(path)
-
 
 def about(request):
     tags = ["обучение", "программирование", "python", "oop"]
